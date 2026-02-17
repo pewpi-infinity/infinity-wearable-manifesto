@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>C13B0 Wearable Manifesto Engine</title><style>
-:root{--bg:#0a0e13;--panel:#0f1520;--line:rgba(255,255,255,.1);--text:#e8eef7;--muted:#8a99ab;--accent:#06b6d4;--green:#10b981;--orange:#f59e0b}
+:root{--bg:#0a0e13;--panel:#0f1520;--line:rgba(255,255,255,.1);--text:#e8eef7;--muted:#8a99ab;--accent:#06b6d4;--green:#10b981;--orange:#f59e0b;--purple:#8b5cf6}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:radial-gradient(900px 600px at 30% -10%,#164e63,transparent 50%),var(--bg);color:var(--text);font-family:system-ui,sans-serif;line-height:1.7;min-height:100vh}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:900px;margin:auto;padding:20px}
+.wrap{max-width:950px;margin:auto;padding:20px}
 header{background:rgba(10,14,19,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px;position:sticky;top:0;z-index:10}
-.hdr{display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:900px;margin:auto}
+.hdr{display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:950px;margin:auto}
 .brand{font-weight:800;font-size:1.1rem}
 .nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
 .nav a{font-size:12px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;color:var(--text)}
@@ -13,17 +13,19 @@ header{background:rgba(10,14,19,.95);backdrop-filter:blur(10px);border-bottom:1p
 .hero{text-align:center;padding:50px 20px 30px;border-bottom:1px solid var(--line)}
 .hero-icon{font-size:3.5rem;margin-bottom:12px}
 .hero h1{font-size:1.7rem;font-weight:800;margin-bottom:8px}
-.hero p{color:var(--muted);max-width:600px;margin:auto;font-size:14px}
+.hero p{color:var(--muted);max-width:620px;margin:auto;font-size:14px}
 .stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0}
 .stat{border:1px solid var(--line);border-radius:12px;padding:12px 20px;text-align:center;background:rgba(255,255,255,.03)}
 .stat strong{display:block;font-size:1.4rem;color:var(--accent)}
 .stat span{font-size:12px;color:var(--muted)}
 section{margin-top:32px}
 section h2{font-size:1.15rem;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:10px}
 .module{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;background:rgba(255,255,255,.02)}
 .module h3{font-size:.95rem;color:var(--accent);margin-bottom:6px}
 .module p{font-size:13px;color:var(--muted);margin:0}
-.module .tag{font-size:10px;padding:2px 8px;border-radius:99px;background:var(--accent);color:#fff;font-weight:600;float:right}
+.tag{font-size:10px;padding:2px 8px;border-radius:99px;color:#fff;font-weight:600;float:right}
+.tag-a{background:#ef4444}.tag-b{background:#f59e0b}.tag-c{background:#8b5cf6}.tag-d{background:#06b6d4}.tag-py{background:var(--green)}
 .chapters{list-style:none}
 .chapters li{padding:10px 14px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.02)}
 .chapters li:hover{background:rgba(255,255,255,.04)}
@@ -38,98 +40,155 @@ section h2{font-size:1.15rem;font-weight:700;margin-bottom:14px;padding-bottom:8
 .place-card em{display:block;font-size:10px;color:var(--muted);margin-top:4px;font-style:normal}
 .insight{border-left:3px solid var(--green);padding:12px 16px;margin:16px 0;background:rgba(16,185,129,.05);border-radius:0 8px 8px 0;font-size:13px}
 .insight strong{color:var(--green)}
+.arch{border:1px solid var(--line);border-radius:12px;padding:16px;margin:16px 0;background:rgba(99,102,241,.04);font-family:'Courier New',monospace;font-size:12px;line-height:1.6;white-space:pre;overflow-x:auto}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;animation:pulse 2s ease-in-out infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
 footer{border-top:1px solid var(--line);margin-top:40px;padding:16px 0;text-align:center;font-size:12px;color:var(--muted)}
+@media(max-width:500px){.grid2{grid-template-columns:1fr}.node-grid{grid-template-columns:repeat(2,1fr)}}
 </style></head><body>
 
 <header>
 <div class="hdr">
-  <span class="brand">&#x2699; C13B0 Wearable Engine</span>
+  <span class="brand">&#x2699; C13B0 Structural Engine</span>
   <nav class="nav">
     <a href="https://pewpi-infinity.github.io/infinity-crown-index/">Crown Index</a>
     <a href="https://pewpi-infinity.github.io/infinity-manifesto/">Manifesto</a>
     <a href="https://pewpi-infinity.github.io/infinity-mega-labs/">Mega Labs</a>
     <a href="https://pewpi-infinity.github.io/infinity-energy/">Fermi Layer</a>
+    <a href="https://pewpi-infinity.github.io/infinity-crown-index/version_viewer.html">Versions</a>
   </nav>
 </div>
 </header>
 
 <div class="hero">
   <div class="hero-icon">&#x2699;</div>
-  <h1>C13B0 Wearable Manifesto Engine</h1>
-  <p>Bridging ion physics to wearable technology. Lattice simulation, node schematics, energy harvest placement, and structural compilation for the Infinity Ecosystem.</p>
+  <h1>C13B0 Structural Engine</h1>
+  <p>Unified transformer architecture bridging ion physics to wearable technology. 8 simulation modules, distributed node schematics, power grid optimization, and Maxwell field integration. Every repo connects as one machine.</p>
 </div>
 
 <div class="wrap">
 
 <div class="stats">
-  <div class="stat"><strong>4</strong><span>Simulations</span></div>
+  <div class="stat"><strong>8</strong><span>Simulations</span></div>
   <div class="stat"><strong>6</strong><span>Chapters</span></div>
   <div class="stat"><strong>4</strong><span>Node Types</span></div>
+  <div class="stat"><strong>24</strong><span>Mesh Nodes</span></div>
   <div class="stat"><strong><span class="dot"></span>Active</strong><span>Status</span></div>
 </div>
 
+<!-- Architecture Diagram -->
 <section>
-  <h2>&#x1F52C; Simulations</h2>
-  <div class="module">
-    <span class="tag">Python</span>
-    <h3>ion_flux_sim.py</h3>
-    <p>Nernst-Planck ion transport simulator. Models Na+, K+, Ca2+, Cl- fluxes across membranes with diffusion and migration components.</p>
-  </div>
-  <div class="module">
-    <span class="tag">Python</span>
-    <h3>fermi_energy_sim.py</h3>
-    <p>Fermi energy calculator for Na, Cu, Al, Au, Ag, Fe. Temperature dependence analysis for wearable metallic contacts.</p>
-  </div>
-  <div class="module">
-    <span class="tag">Python</span>
-    <h3>lattice_energy_sim.py</h3>
-    <p>Born-Lande lattice energy for NaCl, CsCl, ZnS, MgO, CaF2, TiO2. Energy vs spacing analysis with equilibrium determination.</p>
-  </div>
-  <div class="module">
-    <span class="tag">Python</span>
-    <h3>thermoelectric_model.py</h3>
-    <p>Thermoelectric harvesting model for Bi2Te3, PbTe, SnSe, Organic materials. Reality check against wearable power requirements.</p>
+  <h2>&#x1F3D7; Transformer Architecture</h2>
+  <div class="arch">
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;              CROWN INDEX (Hub)               &#x2502;
+&#x2502;    Version Viewer + Repo Navigator           &#x2502;
+&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+     &#x2502;            &#x2502;            &#x2502;            &#x2502;
+&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510; &#x250C;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+&#x2502;Manifesto&#x2502; &#x2502;Wearable  &#x2502; &#x2502;Mega Labs &#x2502; &#x2502;Machine  &#x2502;
+&#x2502;Chapters &#x2502; &#x2502;Engine   &#x2502; &#x2502;Infra    &#x2502; &#x2502;Repos    &#x2502;
+&#x2514;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x252C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518; &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;
+   &#x2502;           &#x2502;
+   &#x2502;     &#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;
+   &#x2502;     &#x2502; 8 SIMULATION MODULES       &#x2502;
+   &#x2502;     &#x2502; A: Maxwell Fields           &#x2502;
+   &#x2502;     &#x2502; B: Thermal Safety           &#x2502;
+   &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524; C: Memory Map               &#x2502;
+         &#x2502; D: Power Density            &#x2502;
+         &#x2502; + Ion Flux, Fermi, Lattice  &#x2502;
+         &#x2502; + Thermoelectric            &#x2502;
+         &#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;</div>
+</section>
+
+<!-- Simulation Modules -->
+<section>
+  <h2>&#x1F52C; Simulation Modules (A-D + Core)</h2>
+  <div class="grid2">
+    <div class="module">
+      <span class="tag tag-a">Module A</span>
+      <h3>maxwell_field_sim.py</h3>
+      <p>Unified electromagnetic analysis. Gauss, Ampere, Faraday laws applied to ion systems. EM spectrum mapping for wearable bands. Field energy density comparison.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-b">Module B</span>
+      <h3>thermal_safety_sim.py</h3>
+      <p>IEC 60601-1 safety limits. Component heat generation with duty cycles. Thermal resistance stack model. Graphene heat spreader analysis. Skin temperature prediction.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-c">Module C</span>
+      <h3>memory_map_sim.py</h3>
+      <p>Distributed RAM across 24 mesh nodes. 24-bit address space. Data flow pipeline: sense &#x2192; filter &#x2192; compress &#x2192; route &#x2192; infer &#x2192; report. Energy-memory equivalence analysis.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-d">Module D</span>
+      <h3>power_density_sim.py</h3>
+      <p>Textile power grid with IR drop simulation. Poisson relaxation solver. Stretch-zone resistance mapping. Thermal feedback from I&#xB2;R hotspots. Grid optimization recommendations.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-py">Core</span>
+      <h3>ion_flux_sim.py</h3>
+      <p>Nernst-Planck ion transport. Na+, K+, Ca2+, Cl- membrane fluxes. Diffusion (Fick) + migration components. Full flux at resting potential.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-py">Core</span>
+      <h3>fermi_energy_sim.py</h3>
+      <p>Fermi energy for Na, Cu, Al, Au, Ag, Fe. Temperature dependence. Fermi temperature vs body temp. Wearable contact conductivity.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-py">Core</span>
+      <h3>lattice_energy_sim.py</h3>
+      <p>Born-Lande for NaCl, CsCl, ZnS, MgO, CaF2, TiO2. Energy vs spacing curves. Stability ranking. Biocompatible material selection.</p>
+    </div>
+    <div class="module">
+      <span class="tag tag-py">Core</span>
+      <h3>thermoelectric_model.py</h3>
+      <p>ZT figure of merit for Bi2Te3, PbTe, SnSe, Organic. Power output at body temperature. Reality check vs BLE/MCU/phone power needs.</p>
+    </div>
   </div>
 </section>
 
+<!-- Wearable Nodes -->
 <section>
   <h2>&#x1F9E0; Wearable Node Types</h2>
   <div class="node-grid">
     <div class="node-card">
-      <h4>SensorNode</h4>
+      <h4>SensorNode x12</h4>
       <p>ARM Cortex M0+</p>
-      <p>8MB NOR Flash</p>
+      <p>64KB SRAM + 512KB Flash</p>
       <p>Thermoelectric harvest</p>
-      <p>Cu-CNT yarn mesh</p>
+      <p>1 kbps data rate</p>
     </div>
     <div class="node-card">
-      <h4>ComputeNode</h4>
+      <h4>ComputeNode x2</h4>
       <p>RISC-V RV32IMC</p>
-      <p>32MB MRAM</p>
-      <p>Thermo + RF rectenna</p>
-      <p>High-BW Cu-CNT mesh</p>
+      <p>256KB SRAM + 4MB MRAM</p>
+      <p>TinyML inference</p>
+      <p>100 kbps processing</p>
     </div>
     <div class="node-card">
-      <h4>PowerNode</h4>
+      <h4>PowerNode x4</h4>
       <p>Dedicated PMIC</p>
-      <p>2MB config Flash</p>
-      <p>Piezo + Solar</p>
-      <p>Power distribution yarn</p>
+      <p>16KB SRAM + 128KB Flash</p>
+      <p>Piezo + Solar harvest</p>
+      <p>Energy logging</p>
     </div>
     <div class="node-card">
-      <h4>MeshRouter</h4>
+      <h4>MeshRouter x6</h4>
       <p>BLE 5.3 SoC (nRF54)</p>
-      <p>4MB + 512KB SRAM</p>
+      <p>128KB SRAM + 512KB Flash</p>
+      <p>250 kbps routing</p>
       <p>Parasitic bus power</p>
-      <p>BLE + Cu-CNT mesh</p>
     </div>
+  </div>
+  <div class="insight">
+    <strong>Total distributed memory:</strong> 15.6 MB across 24 nodes. SRAM for real-time ops (40 GB/s equivalent throughput). MRAM for non-volatile inference state. Flash for logging and models.
   </div>
 </section>
 
+<!-- Energy Harvest Placement -->
 <section>
-  <h2>&#x26A1; Energy Harvest Placement</h2>
+  <h2>&#x26A1; Energy Harvest Placement Map</h2>
   <div class="placement">
     <div class="place-card"><strong>Shoes</strong><span>Piezoelectric</span><em>5-50 uW/step</em></div>
     <div class="place-card"><strong>Back</strong><span>Solar (flex)</span><em>10-100 mW</em></div>
@@ -138,50 +197,52 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:16px 0;text-alig
     <div class="place-card"><strong>Wrist</strong><span>Piezo + Thermo</span><em>5-30 uW</em></div>
   </div>
   <div class="insight">
-    <strong>Design rule:</strong> Total realistic body harvest budget is ~200 uW continuous. Active MCU bursts limited to 10ms every 10s. BLE beacon max 1 pkt/s. All materials must be biocompatible and washable.
+    <strong>Power budget:</strong> 195 uW harvest vs 514.75 uW avg consumption. Supercap buffer absorbs burst demand. BLE transmit is the dominant cost. Local processing + compressed reporting is the optimal strategy. Memory access is cheap; communication is expensive.
   </div>
 </section>
 
+<!-- Manifesto Chapters -->
 <section>
-  <h2>&#x1F4D8; Manifesto Chapters</h2>
+  <h2>&#x1F4D8; Ion Manifesto Chapters</h2>
   <ul class="chapters">
-    <li><a href="https://pewpi-infinity.github.io/infinity-manifesto/">Electrostatics (Root Layer)</a><span style="font-size:12px;color:var(--muted)">Vol I Part I</span></li>
-    <li><a href="https://pewpi-infinity.github.io/infinity-energy/">Fermi Layer (Quantum Materials)</a><span style="font-size:12px;color:var(--muted)">Vol I Part III</span></li>
-    <li><a href="https://pewpi-infinity.github.io/infinity-currency/">Electrochemistry</a><span style="font-size:12px;color:var(--muted)">Vol I Part II</span></li>
-    <li><a href="https://pewpi-infinity.github.io/infinity-dynamics/">Ion Transport</a><span style="font-size:12px;color:var(--muted)">Vol I Part IV</span></li>
-    <li><a href="https://pewpi-infinity.github.io/infinity-memory/">Ion Gradients (Biology)</a><span style="font-size:12px;color:var(--muted)">Vol I Part V</span></li>
-    <li><a href="https://pewpi-infinity.github.io/infinity-quantum-lighting/">Maxwell Unification</a><span style="font-size:12px;color:var(--muted)">Vol I Part VI</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-manifesto/">I. Electrostatics (Root Layer)</a><span style="font-size:12px;color:var(--muted)">Coulomb, Gauss, Fields</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-energy/">III. Fermi Layer (Quantum Materials)</a><span style="font-size:12px;color:var(--muted)">Degeneracy, Bands</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-currency/">II. Electrochemistry</a><span style="font-size:12px;color:var(--muted)">Nernst, Gibbs, Potential</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-dynamics/">IV. Ion Transport</a><span style="font-size:12px;color:var(--muted)">Fick, Drift-Diffusion</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-memory/">V. Ion Gradients (Biology)</a><span style="font-size:12px;color:var(--muted)">GHK, Na/K ATPase</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-quantum-lighting/">VI. Maxwell Unification</a><span style="font-size:12px;color:var(--muted)">4 Equations, Waves</span></li>
   </ul>
 </section>
 
+<!-- Engine Modules -->
 <section>
-  <h2>&#x1F527; Engine Modules</h2>
+  <h2>&#x1F527; Engine Architecture</h2>
   <div class="module">
-    <span class="tag">Core</span>
+    <span class="tag tag-py">Generator</span>
     <h3>Manifesto Generator</h3>
-    <p>Generates structured physics content from equation definitions. Outputs markdown and interactive HTML chapters.</p>
+    <p>Produces structured physics content from equation definitions. Outputs interactive HTML chapters with expandable derivations, equation boxes, and cross-chapter navigation.</p>
   </div>
   <div class="module">
-    <span class="tag">Core</span>
-    <h3>Equation Simulator</h3>
-    <p>Python simulation suite: ion flux, Fermi energy, lattice energy, thermoelectric modeling. All physically validated.</p>
+    <span class="tag tag-py">Simulator</span>
+    <h3>Equation Simulator Suite</h3>
+    <p>8 Python modules covering Maxwell fields, thermal safety, distributed memory, power grid, ion flux, Fermi energy, lattice energy, and thermoelectric harvesting.</p>
   </div>
   <div class="module">
-    <span class="tag">Build</span>
-    <h3>TOC Builder</h3>
-    <p>Compiles table of contents across all manifesto volumes. Auto-links chapters and simulations.</p>
+    <span class="tag tag-py">Builder</span>
+    <h3>TOC + Schematic Builder</h3>
+    <p>Compiles table of contents across all volumes. Generates wearable node schematics with compute, memory, harvest, and bus specifications per node type.</p>
   </div>
   <div class="module">
-    <span class="tag">Deploy</span>
+    <span class="tag tag-py">Compiler</span>
     <h3>Structural Compiler</h3>
-    <p>Safe, non-destructive repo updater. Adds manifesto links without overwriting existing content. Protected repo list enforced.</p>
+    <p>Safe, non-destructive repo updater. Checks for existing content before writing. Protected repo list enforced. Throttled deployment with SHA verification.</p>
   </div>
 </section>
 
 </div>
 
 <footer class="wrap">
-  C13B0 Structural Engine &middot; Infinity Ecosystem &middot; <a href="https://pewpi-infinity.github.io/infinity-crown-index/">Crown Index</a>
+  C13B0 Structural Engine &middot; Infinity Ecosystem &middot; <a href="https://pewpi-infinity.github.io/infinity-crown-index/">Crown Index</a> &middot; <a href="https://pewpi-infinity.github.io/infinity-crown-index/version_viewer.html">Version Viewer</a>
 </footer>
 
 </body></html>
