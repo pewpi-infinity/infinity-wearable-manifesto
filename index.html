@@ -1,0 +1,187 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>C13B0 Wearable Manifesto Engine</title><style>
+:root{--bg:#0a0e13;--panel:#0f1520;--line:rgba(255,255,255,.1);--text:#e8eef7;--muted:#8a99ab;--accent:#06b6d4;--green:#10b981;--orange:#f59e0b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(900px 600px at 30% -10%,#164e63,transparent 50%),var(--bg);color:var(--text);font-family:system-ui,sans-serif;line-height:1.7;min-height:100vh}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:auto;padding:20px}
+header{background:rgba(10,14,19,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 16px;position:sticky;top:0;z-index:10}
+.hdr{display:flex;gap:12px;align-items:center;flex-wrap:wrap;max-width:900px;margin:auto}
+.brand{font-weight:800;font-size:1.1rem}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.nav a{font-size:12px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;color:var(--text)}
+.nav a:hover{background:rgba(255,255,255,.06);text-decoration:none}
+.hero{text-align:center;padding:50px 20px 30px;border-bottom:1px solid var(--line)}
+.hero-icon{font-size:3.5rem;margin-bottom:12px}
+.hero h1{font-size:1.7rem;font-weight:800;margin-bottom:8px}
+.hero p{color:var(--muted);max-width:600px;margin:auto;font-size:14px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:24px 0}
+.stat{border:1px solid var(--line);border-radius:12px;padding:12px 20px;text-align:center;background:rgba(255,255,255,.03)}
+.stat strong{display:block;font-size:1.4rem;color:var(--accent)}
+.stat span{font-size:12px;color:var(--muted)}
+section{margin-top:32px}
+section h2{font-size:1.15rem;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.module{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+.module h3{font-size:.95rem;color:var(--accent);margin-bottom:6px}
+.module p{font-size:13px;color:var(--muted);margin:0}
+.module .tag{font-size:10px;padding:2px 8px;border-radius:99px;background:var(--accent);color:#fff;font-weight:600;float:right}
+.chapters{list-style:none}
+.chapters li{padding:10px 14px;border:1px solid var(--line);border-radius:10px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.02)}
+.chapters li:hover{background:rgba(255,255,255,.04)}
+.node-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:12px}
+.node-card{border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(6,182,212,.04)}
+.node-card h4{font-size:.85rem;color:var(--accent);margin-bottom:6px}
+.node-card p{font-size:11px;color:var(--muted);margin:3px 0}
+.placement{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;margin-top:12px}
+.place-card{border:1px solid var(--line);border-radius:8px;padding:10px;text-align:center;background:rgba(255,255,255,.02)}
+.place-card strong{display:block;font-size:.9rem;color:var(--text)}
+.place-card span{font-size:11px;color:var(--green)}
+.place-card em{display:block;font-size:10px;color:var(--muted);margin-top:4px;font-style:normal}
+.insight{border-left:3px solid var(--green);padding:12px 16px;margin:16px 0;background:rgba(16,185,129,.05);border-radius:0 8px 8px 0;font-size:13px}
+.insight strong{color:var(--green)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:16px 0;text-align:center;font-size:12px;color:var(--muted)}
+</style></head><body>
+
+<header>
+<div class="hdr">
+  <span class="brand">&#x2699; C13B0 Wearable Engine</span>
+  <nav class="nav">
+    <a href="https://pewpi-infinity.github.io/infinity-crown-index/">Crown Index</a>
+    <a href="https://pewpi-infinity.github.io/infinity-manifesto/">Manifesto</a>
+    <a href="https://pewpi-infinity.github.io/infinity-mega-labs/">Mega Labs</a>
+    <a href="https://pewpi-infinity.github.io/infinity-energy/">Fermi Layer</a>
+  </nav>
+</div>
+</header>
+
+<div class="hero">
+  <div class="hero-icon">&#x2699;</div>
+  <h1>C13B0 Wearable Manifesto Engine</h1>
+  <p>Bridging ion physics to wearable technology. Lattice simulation, node schematics, energy harvest placement, and structural compilation for the Infinity Ecosystem.</p>
+</div>
+
+<div class="wrap">
+
+<div class="stats">
+  <div class="stat"><strong>4</strong><span>Simulations</span></div>
+  <div class="stat"><strong>6</strong><span>Chapters</span></div>
+  <div class="stat"><strong>4</strong><span>Node Types</span></div>
+  <div class="stat"><strong><span class="dot"></span>Active</strong><span>Status</span></div>
+</div>
+
+<section>
+  <h2>&#x1F52C; Simulations</h2>
+  <div class="module">
+    <span class="tag">Python</span>
+    <h3>ion_flux_sim.py</h3>
+    <p>Nernst-Planck ion transport simulator. Models Na+, K+, Ca2+, Cl- fluxes across membranes with diffusion and migration components.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Python</span>
+    <h3>fermi_energy_sim.py</h3>
+    <p>Fermi energy calculator for Na, Cu, Al, Au, Ag, Fe. Temperature dependence analysis for wearable metallic contacts.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Python</span>
+    <h3>lattice_energy_sim.py</h3>
+    <p>Born-Lande lattice energy for NaCl, CsCl, ZnS, MgO, CaF2, TiO2. Energy vs spacing analysis with equilibrium determination.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Python</span>
+    <h3>thermoelectric_model.py</h3>
+    <p>Thermoelectric harvesting model for Bi2Te3, PbTe, SnSe, Organic materials. Reality check against wearable power requirements.</p>
+  </div>
+</section>
+
+<section>
+  <h2>&#x1F9E0; Wearable Node Types</h2>
+  <div class="node-grid">
+    <div class="node-card">
+      <h4>SensorNode</h4>
+      <p>ARM Cortex M0+</p>
+      <p>8MB NOR Flash</p>
+      <p>Thermoelectric harvest</p>
+      <p>Cu-CNT yarn mesh</p>
+    </div>
+    <div class="node-card">
+      <h4>ComputeNode</h4>
+      <p>RISC-V RV32IMC</p>
+      <p>32MB MRAM</p>
+      <p>Thermo + RF rectenna</p>
+      <p>High-BW Cu-CNT mesh</p>
+    </div>
+    <div class="node-card">
+      <h4>PowerNode</h4>
+      <p>Dedicated PMIC</p>
+      <p>2MB config Flash</p>
+      <p>Piezo + Solar</p>
+      <p>Power distribution yarn</p>
+    </div>
+    <div class="node-card">
+      <h4>MeshRouter</h4>
+      <p>BLE 5.3 SoC (nRF54)</p>
+      <p>4MB + 512KB SRAM</p>
+      <p>Parasitic bus power</p>
+      <p>BLE + Cu-CNT mesh</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>&#x26A1; Energy Harvest Placement</h2>
+  <div class="placement">
+    <div class="place-card"><strong>Shoes</strong><span>Piezoelectric</span><em>5-50 uW/step</em></div>
+    <div class="place-card"><strong>Back</strong><span>Solar (flex)</span><em>10-100 mW</em></div>
+    <div class="place-card"><strong>Chest</strong><span>Thermoelectric</span><em>10-100 uW</em></div>
+    <div class="place-card"><strong>Shoulders</strong><span>RF Rectenna</span><em>1-10 uW</em></div>
+    <div class="place-card"><strong>Wrist</strong><span>Piezo + Thermo</span><em>5-30 uW</em></div>
+  </div>
+  <div class="insight">
+    <strong>Design rule:</strong> Total realistic body harvest budget is ~200 uW continuous. Active MCU bursts limited to 10ms every 10s. BLE beacon max 1 pkt/s. All materials must be biocompatible and washable.
+  </div>
+</section>
+
+<section>
+  <h2>&#x1F4D8; Manifesto Chapters</h2>
+  <ul class="chapters">
+    <li><a href="https://pewpi-infinity.github.io/infinity-manifesto/">Electrostatics (Root Layer)</a><span style="font-size:12px;color:var(--muted)">Vol I Part I</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-energy/">Fermi Layer (Quantum Materials)</a><span style="font-size:12px;color:var(--muted)">Vol I Part III</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-currency/">Electrochemistry</a><span style="font-size:12px;color:var(--muted)">Vol I Part II</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-dynamics/">Ion Transport</a><span style="font-size:12px;color:var(--muted)">Vol I Part IV</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-memory/">Ion Gradients (Biology)</a><span style="font-size:12px;color:var(--muted)">Vol I Part V</span></li>
+    <li><a href="https://pewpi-infinity.github.io/infinity-quantum-lighting/">Maxwell Unification</a><span style="font-size:12px;color:var(--muted)">Vol I Part VI</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>&#x1F527; Engine Modules</h2>
+  <div class="module">
+    <span class="tag">Core</span>
+    <h3>Manifesto Generator</h3>
+    <p>Generates structured physics content from equation definitions. Outputs markdown and interactive HTML chapters.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Core</span>
+    <h3>Equation Simulator</h3>
+    <p>Python simulation suite: ion flux, Fermi energy, lattice energy, thermoelectric modeling. All physically validated.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Build</span>
+    <h3>TOC Builder</h3>
+    <p>Compiles table of contents across all manifesto volumes. Auto-links chapters and simulations.</p>
+  </div>
+  <div class="module">
+    <span class="tag">Deploy</span>
+    <h3>Structural Compiler</h3>
+    <p>Safe, non-destructive repo updater. Adds manifesto links without overwriting existing content. Protected repo list enforced.</p>
+  </div>
+</section>
+
+</div>
+
+<footer class="wrap">
+  C13B0 Structural Engine &middot; Infinity Ecosystem &middot; <a href="https://pewpi-infinity.github.io/infinity-crown-index/">Crown Index</a>
+</footer>
+
+</body></html>
